@@ -174,3 +174,17 @@ option {
 .container, .description {
     margin-top: 20px;
 }
+
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-data td {
+    padding: 8px;
+}
+
+.table-data td:first-child {
+    font-weight: bold;
+}
