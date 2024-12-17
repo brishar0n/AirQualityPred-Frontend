@@ -146,22 +146,45 @@ function App() {
                     {result && !loading && (
                         <>
                             <div className="result-container">
-                                <h2 className="result-title">Prediction Result</h2>
+                                <h2 className="result-title" style={{ marginTop: "20px" }}>Prediction Result</h2>
                                 {Object.keys(result).map((model) => (
                                     <div key={model}>
-                                        <h3>{model}</h3>
+                                        <h3>Model: {model}</h3>
                                         {result[model].error ? (
                                             <p>{result[model].error}</p>
                                         ) : (
-                                            <>
-                                                <p>Prediction Date: {result[model].date}</p>
-                                                <p>PM2.5 (μg/m3): {result[model].prediction['PM2.5']}</p>
-                                                <p>PM10 (μg/m3): {result[model].prediction.PM10}</p>
-                                                <p>SO2 (ppm): {result[model].prediction.SO2}</p>
-                                                <p>CO (ppm): {result[model].prediction.CO}</p>
-                                                <p>O3 (ppb): {result[model].prediction.O3}</p>
-                                                <p>NO2 (ppm): {result[model].prediction.NO2}</p>
-                                            </>
+                                            <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", border: "1px solid #ddd" }}>
+                                                <tbody>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>Prediction Date:</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].date}</td>
+                                                    </tr>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>PM2.5 (μg/m3):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction['PM2.5'].toFixed(4)}</td>
+                                                    </tr>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>PM10 (μg/m3):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction.PM10.toFixed(4)}</td>
+                                                    </tr>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>SO2 (ppm):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction.SO2.toFixed(4)}</td>
+                                                    </tr>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>CO (ppm):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction.CO.toFixed(4)}</td>
+                                                    </tr>
+                                                    <tr style={{ borderBottom: "1px solid #ddd" }}>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>O3 (ppb):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction.O3.toFixed(4)}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style={{ padding: "8px", fontWeight: "bold", borderRight: "1px solid #ddd" }}>NO2 (ppm):</td>
+                                                        <td style={{ padding: "8px" }}>{result[model].prediction.NO2.toFixed(4)}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         )}
                                     </div>
                                 ))}
