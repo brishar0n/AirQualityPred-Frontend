@@ -38,7 +38,7 @@ function App() {
         };
 
         try {
-            const response = await axios.post("https://aqp-backend.vercel.app/get_prediction", requestData, {
+            const response = await axios.post("https://air-quality-pred-backend.vercel.app/get_prediction", requestData, {
                 headers: {
                     "Content-Type": "application/json",
                 },
