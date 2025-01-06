@@ -54,9 +54,9 @@ AirQualityPred-Frontend/
 ```
 
 ## App Interface
-<img src="assets/UI1.png" width="400">
-<img src="assets/UI2.png" width="400">
-<img src="assets/UI3.png" width="400">
+<img src="assets/UI1.png" width="600">
+<img src="assets/UI2.png" width="600">
+<img src="assets/UI3.png" width="600">
 
 ## Contributors
 - [Ari Jaya Teguh](https://github.com/Spacebone31)
