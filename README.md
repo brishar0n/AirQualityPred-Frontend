@@ -36,7 +36,7 @@ Our Urban Air Quality Predictor is a project based on deep learning (AI) models 
    ```
    npm run dev
    ```
-   Open http://localhost:5173 in your browser to view the app or open [this Vercel link](https://air-quality-pred-frontend.vercel.app)
+   Open http://localhost:5173 in your browser to view the app or open [this Vercel link](https://air-quality-pred-frontend.vercel.app).
 
 ## Project Structure
 
