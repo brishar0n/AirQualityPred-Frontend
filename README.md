@@ -63,6 +63,6 @@ AirQualityPred-Frontend/
 - [Brigitte Sharon Alexander](https://github.com/brishar0n)
 - [Ivandito Rakaputra](https://github.com/IvanditoRakaputra)
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
 Feel free to use, modify, and distribute this software for personal or commercial purposes.
