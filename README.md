@@ -2,8 +2,6 @@
 
 Our Urban Air Quality Predictor is a project based on deep learning (AI) models and architectures: CNN, RNN, GRU, LSTM, ResNet, ReXNet, and Attention mechanism. This program predicts the quality of the air based on 3 parameters: year, month, and day. The models were trained using existing pollutant and weather data from South Tangerang. Its overall average accuracy is 97.745% on training data. With this project, users are able to predict the AQI and assume its overall state based on its pollutant factors.
 
----
-
 ## 🌟 Features
 - Interactive and user-friendly interface for inputting prediction parameters (year, month, day, and model).
 - Visualizes air quality predictions for metrics like PM2.5, PM10, CO, O3, SO2, and NO2.
