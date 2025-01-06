@@ -17,21 +17,10 @@ Our Urban Air Quality Predictor is a project based on deep learning (AI) models 
   - Variants with Attention Mechanism.
 - Real-time integration with the backend for accurate predictions.
 
----
-
 ## 🚀 Technology Stack
 - **Frontend**: React.js, Axios, Chart.js, CSS for styling.
 - **Backend**: Flask API (integrated with deep learning models).
 - **Deployment**: Hosted on Vercel for fast and global accessibility.
-
----
-
-## 📋 Prerequisites
-To run this project locally, ensure you have the following installed:
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
-
----
 
 ## ⚙️ Installation and Setup
 1. **Clone the Repository**  
@@ -51,10 +40,9 @@ To run this project locally, ensure you have the following installed:
    ```
    Open http://localhost:5173 in your browser to view the app or open [this Vercel link](https://air-quality-pred-frontend.vercel.app)
 
----
-
 ## 🛠 Project Structure
 
+```
 AirQualityPred-Frontend/
 ├── public/                  # Static files and assets
 ├── src/
@@ -65,6 +53,7 @@ AirQualityPred-Frontend/
 ├── package.json             # Project dependencies and scripts
 ├── README.md                
 └── .gitignore               
+```
 
 ## 🖼 App Interface
 <img src="assets/UI1.png" width="400">
